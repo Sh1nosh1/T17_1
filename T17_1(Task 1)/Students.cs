@@ -43,5 +43,19 @@ namespace T17_1_Task_1_
             base.Print();
             WriteLine($"Date of birth: {Dateofbirth.ToLongDateString()}\nCourse: {Course}");
         }
+        public static Students Enter()
+        {
+            Write("Enter name: ");
+            string name = ReadLine();
+            Write("Enter surname: ");
+            string surname = ReadLine();
+            Write("Enter age: ");
+            int age = Convert.ToInt32(ReadLine());
+            Write("Enter date of birth: ");
+            DateTime dateOfBirth = DateTime.Parse(ReadLine());
+            Write("Enter course: ");
+            int course = Convert.ToInt32(ReadLine());
+            return new Students(age, name, surname, dateOfBirth, course);
+        }
     }
 }

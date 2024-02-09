@@ -42,5 +42,19 @@ namespace T17_1_Task_1_
             base.Print();
             WriteLine($"Company: {Company}\nJob: {Job}");
         }
+        public static Employee Enter()
+        {
+            Write("Enter name staff: ");
+            string name = ReadLine();
+            Write("Enter surname: ");
+            string surname = ReadLine();
+            Write("Enter age: ");
+            int age = Convert.ToInt32(ReadLine());
+            Write("Enter name of company: ");
+            string company = ReadLine();
+            Write("Enter a job: ");
+            string job = ReadLine();
+            return new Employee(age, name, surname, company, job);
+        }
     }
 }

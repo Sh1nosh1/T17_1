@@ -62,7 +62,11 @@ namespace T17_1_Task_1_
         /// <summary>
         /// Output
         /// </summary>
-        public void Print()
+        /*public void Print()
+        {
+            WriteLine($"Age: {Age}\nName: {Name}\nSurname: {Surname}");
+        }*/
+        virtual public void Print()
         {
             WriteLine($"Age: {Age}\nName: {Name}\nSurname: {Surname}");
         }
